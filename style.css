@@ -3,14 +3,26 @@
   font-family: 'Spartan', sans-serif;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1440px) and (max-width: 375px) {
 
 }
 
+.background-top{
+  position: absolute;
+  width: auto;
+}
+
+.background-bottom{
+  position: absolute;
+  width: auto;
+}
+
 html body{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
+  position: relative;
 }
 
 h1{
@@ -24,7 +36,7 @@ h1{
   line-height: 2.9rem;
 }
 
-h4{
+h3{
   color: #937B92;
   font-weight: 500;
   text-align: left;
@@ -32,6 +44,11 @@ h4{
   font-size: 0.9rem;
   line-height: 1.5rem;
   margin-left: 50px;
+}
+
+h4{
+  color: #F7F2F7;
+  font-weight: 400;
 }
 
 h5{
@@ -49,56 +66,86 @@ li {
   list-style-type: none;
 }
 
-img{
+.Profile{
   border-radius: 100%;
   width: 50px;
   float: left;
 }
 
 .intro{
-  position: absolute;
-  margin-top: 120px;
-  margin-left: 50px;
+  position: relative;
+  top: 150px;
+  left: 200px;
 }
 
-.stars{
-  position: absolute;
-  margin-top: 145px;
-  margin-left: 250px;
+.stars-wrapper{
+  position: relative;
+  top: -50px;
+  left: 250px;
+  margin-left: 600px;
+  color: #440d4a;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
-.subtitle{
-  color: #937B92;
+.reviews{
+  background-color: #F7F2F7;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+  width: 40%;
+  text-align: center;
+}
+
+.guru{
+  background-color: #F7F2F7;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  width: 40%;
+  text-align: center;
+}
+
+.best-tech{
+  background-color: #F7F2F7;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: 200px;
+  text-align: center;
+  width: 40%;
+}
+
+.review-wrapper{
+  position: relative;
+  left: 250px;
 }
 
 .colton{
   background-color: #440d4a;
-  width: 20%;
   border-radius: 10px;
-  padding: 20px 30px;
-  position: absolute;
-  margin-top: 475px;
-  margin-left: 100px;
+  padding: 30px 50px;
+  width: 397px;
 }
 
 .irene{
   background-color: #440d4a;
-  width: 20%;
   border-radius: 10px;
-  padding: 20px 30px;
-  position: absolute;
-  margin-top: 500px;
-  margin-left: 490px;
+  padding: 30px 50px;
+  width: 397px;
+  position: relative;
+  left: 430px;
+  top: -180px;
 }
 
 .anne{
   background-color: #440d4a;
-  width: 20%;
   border-radius: 10px;
-  padding: 20px 30px;
-  position: absolute;
-  margin-top: 525px;
-  margin-left: 880px;
+  padding: 30px 50px;
+  width: 397px;
+  position: relative;
+  left: 860px;
+  top: -350px;
 }
 
 .name{
@@ -112,44 +159,6 @@ img{
   color: #8E398E;
   margin-left: 75px;
   margin-top: 0;
-}
-
-.reviews{
-  background-color: #F7F2F7;
-  color: #440d4a;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.8rem;
-  width: 50%;
-  margin-left: 400px;
-  margin-bottom: 25px;
-}
-
-.guru{
-  background-color: #F7F2F7;
-  color: #440d4a;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.8rem;
-  width: 50%;
-  margin-left: 450px;
-  margin-bottom: 25px;
-}
-
-.best-tech{
-  background-color: #F7F2F7;
-  color: #440d4a;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.8rem;
-  width: 50%;
-  margin-left: 500px;
 }
 
 .attribution {
